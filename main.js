@@ -1,10 +1,11 @@
 // modify background navbar on scroll and (hide / show) back to top button
 document.body.onscroll = function (){
-    let toTop = document.getElementById('back-to-top'),
+    let toTop = document.getElementById('toTop'),
         fullWidthNav = document.getElementById('nav-full'),
         activeNaveEl = document.getElementById('active'),
         darkLogo = document.getElementById('dark-logo');
-    window.scrollY > 100 ? toTop.style.display = 'block' : toTop.style.display = "none";
+    toTop.innerText = ` ${Math.ceil(((window.scrollY * 100) / document.body.scrollHeight)) + 18}%`;
+    window.scrollY > 100 ? toTop.classList.add('show') : toTop.classList.remove('show');
     window.scrollY > 500 ?
         (fullWidthNav.classList.add('scrolledNav'),
             activeNaveEl.classList.add('active'),

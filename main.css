@@ -109,40 +109,57 @@ a {
     color: #1D9BF0;
 }
 
-#back-to-top{
-    width: 40px;
-    height: 40px;
-    border:2px solid rgba(255,255,255,.8);
+.back-to-top{
+    width: 70px;
+    height: 70px;
+    border:1px dashed red;
     border-radius: 50%;
-    background: rgba(0,0,0,.6);
-    color: #fff;
+    /* background: rgba(0,0,0,.6); */
+    color: red;
     position: fixed;
-    bottom: 1vh;
-    right: 1vh;
+    bottom: 30px;
+    right: -70px;
     opacity: .5;
     text-align:center;
-    line-height: 35px;
-    font-size: 12px;
-    font-weight: 100;
+    line-height: 66px !important;
+    font-size: 16px;
+    font-weight: 600;
     z-index: 999;
     cursor: pointer;
-    display: none;
-
+    visibility: hidden;
+    transition:all 0.9s ease;
+    -webkit-transition:all 0.9s ease;
+    -moz-transition:all 0.9s ease;
+    -ms-transition:all 0.9s ease;
+    -o-transition:all 0.9s ease;
 }
-#back-to-top a{
+.show{
+    transform: translateX(-100px);
+    visibility: visible;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+}
+.icon-chevron-up::before{
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    right: 27px;
+}
+/* #toTop a{
     width: 100%;
     height: 100%;
-
+} */
+#toTop:hover{
+    background: #000000;
 }
-#back-to-top:hover{
-    background: #070A0E;
-}
 
-#back-to-top span{
+/* #toTop span{
     width: 100%;
     height: 100%;
     display: inline-block;
-}
+} */
 .full-screen-search {
     width: 100%;
     height: 100vh;
@@ -198,7 +215,7 @@ a {
 
 /*start Header */
 header, .quote {
-    background-image: url(./assist/business.jpg);
+    background-image: url(./assist/map.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
