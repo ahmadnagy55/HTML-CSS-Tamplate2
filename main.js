@@ -4,7 +4,7 @@ document.body.onscroll = function (){
         fullWidthNav = document.getElementById('nav-full'),
         activeNaveEl = document.getElementById('active'),
         darkLogo = document.getElementById('dark-logo');
-    toTop.innerText = ` ${Math.ceil(((window.scrollY * 100) / document.body.scrollHeight)) + 18}%`;
+    toTop.innerText = ` ${Math.ceil(((window.scrollY * 100) / document.body.scrollHeight)) + 17}%`;
     window.scrollY > 100 ? toTop.classList.add('show') : toTop.classList.remove('show');
     window.scrollY > 500 ?
         (fullWidthNav.classList.add('scrolledNav'),
