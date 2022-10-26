@@ -32,7 +32,19 @@
   <div id="back-to-top">
     <a href="#top"><span class="icon-chevron-up"></span></a>
   </div>
-
+  <div id="hidden-page" class="full-screen-search">
+    <div class="containerHidden">
+      <a href="#">
+        <span id= 'icon-close' class="icon-close"></span>
+      </a>
+      <form action="#">
+        <input type="text" class="search-input" placeholder="Search...">
+        <a href="#">
+          <span class="icon-search"></span>
+        </a>
+      </form>
+    </div>
+  </div>
   <!--end fixed bar-->
   <!--start header-->
   <header>
@@ -50,14 +62,7 @@
                 <li><a href="#">News</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">
-                    <span class="icon-search"></span>
-                    <div class="full-screen-search">
-                      <a href="#"><span class="icon-cancel"></span></a>
-                      <form action="#">
-                        <input type="text" class="search-input" placeholder="Search...">
-                        <a href="#"><span class="icon-search"></span></a>
-                      </form>
-                    </div>
+                    <span id='search' class="icon-search"></span>
                   </a>
                 </li>
               </ul>
@@ -373,6 +378,7 @@
 
   </footer>
   <!--end footer-->
+  <script src="main.js"></script>
 </body>
 
 </html>
